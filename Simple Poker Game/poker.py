@@ -61,8 +61,8 @@ def check_pair(cards):
         return ""
 
 player = input_player()
-init_deck()
 while True:
+    init_deck()
     for _ in range(player):
         cards = pick_card()
         print_card(cards)
@@ -72,4 +72,3 @@ while True:
         break
     else:
         print()
-        init_deck()
